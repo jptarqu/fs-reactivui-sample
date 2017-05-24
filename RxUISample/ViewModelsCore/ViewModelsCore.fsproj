@@ -1,0 +1,18 @@
+﻿<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-win+net45+wp8+win81+wpa8</PackageTargetFallback>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+    <Compile Include="MainView.fs" />
+    <Compile Include="RxUISample.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="4.1.*" />
+    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
+    <PackageReference Include="reactiveui" Version="7.3.0" />
+    <PackageReference Include="Xamarin.Forms" Version="2.3.4.247" />
+    <PackageReference Include="reactiveui-xamforms" Version="7.3.0" />
+  </ItemGroup>
+</Project>
